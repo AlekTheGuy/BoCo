@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterBar component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Footer -->
+  <footer
+    class="w-full bg-white dark:bg-gray-800 sm:flex-row border-1 border-t border-gray-600 h-10"
+  >
+    <!-- Copyright -->
+    <p
+      class="float-left text-xs my-3 ml-4 text-primary-dark"
+    >
+       © BoCo 2022 - All rights reserved 
+    </p>
+    <!-- Icon link to help page -->
+    <svg
+      aria-hidden="true"
+      class="md:mt-0 mt-1 mr-4 float-right cursor-pointer h-8 md:h-10 text-primary-medium"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </footer>
+  
+</div>
+`;

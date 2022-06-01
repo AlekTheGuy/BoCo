@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Login form -->
+  <div
+    class="md:ring-1 ring-gray-300 rounded-xl overflow-hidden mx-auto mb-auto max-w-md w-full"
+  >
+    <!-- Header -->
+    <div
+      class="px-6 py-4 mt-4"
+    >
+      <div
+        class="text-xl md:text-2xl font-medium text-center text-primary-light mt-4 mb-8"
+      >
+         Logg på 
+      </div>
+      <!-- Email -->
+      <div>
+        <div
+          class="w-full mt-6"
+        >
+          <input
+            class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-primary-light dark:focus:border-primary-light focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-primary-light"
+            placeholder="Skriv inn din e-postadresse *"
+            required=""
+            type="email"
+          />
+          <!-- error message for email -->
+          
+          
+        </div>
+        <!-- Password -->
+        <div
+          class="w-full mt-6"
+        >
+          <input
+            class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-primary-light dark:focus:border-primary-light focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-primary-light"
+            placeholder="Vennligst oppgi passordet ditt *"
+            required=""
+            type="password"
+          />
+          <!-- error message for password -->
+          
+          
+        </div>
+        <!-- Router link for forgetting password. Redirects to reset password page. -->
+        <div
+          class="flex items-center justify-between mt-8"
+        >
+          <router-link
+            class="text-primary-medium"
+            to="/resetPassword"
+          >
+            Glemt passord?
+          </router-link>
+          <!-- Button for logging in -->
+          
+          <!-- Button with custom text and color -->
+          <button
+            class="flex items-center px-2 py-2 font-medium tracking-wide capitalize text-white transition-colors duration-200 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-80 min-w-{20px} bg-primary-medium hover:bg-primary-dark focus:ring-primary-light login"
+          >
+            Logg på
+          </button>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700"
+    >
+      <!-- Router link to redirect to registering a new user page -->
+      <router-link
+        class="mx-2 text-sm font-bold text-primary-medium dark:text-primary-light hover:underline"
+        to="/register"
+      >
+        Opprette ny konto
+      </router-link>
+    </div>
+    <div
+      class="flex items-center justify-center text-center bg-gray-50"
+    >
+      <!-- Shows a message to user if login fails -->
+      <label
+        class="mx-2 text-sm font-bold text-error-medium dark:text-primary-light hover:underline"
+      />
+    </div>
+  </div>
+  
+</div>
+`;

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- NavBar -->
+  <nav
+    class="flex items-center bg-white justify-between h-10 md:h-14 border-1 border-b border-gray-300 border-solid sticky top-0 z-50"
+  >
+    <!-- Logo reroutes to homepage -->
+    <div
+      class="logo"
+    >
+      <img
+        alt="BoCo logo"
+        class="m-1 ml-4 cursor-pointer h-9 md:h-12"
+        src=""
+      />
+    </div>
+    <ul
+      class="flex justify-between"
+    >
+      <!-- New listing button -->
+      <li
+        class="cursor-pointer"
+      >
+        <plus-icon-stub
+          alt="Legg til"
+          class="m-6 md:mr-2 h-7 text-primary-medium float-left"
+        />
+        <a
+          class="hidden md:block mt-7 text-sm float-right"
+        >
+          Legg til
+        </a>
+      </li>
+      <!-- My messages button -->
+      <li
+        class="cursor-pointer"
+      >
+        <div
+          class="notification-container relative"
+        >
+          <chat-alt2-icon-stub
+            alt="Meldinger"
+            class="m-6 md:mr-2 h-7 text-primary-medium float-left"
+          />
+          <!--v-if-->
+          <a
+            class="hidden md:block mt-7 text-sm float-right"
+          >
+            Meldinger
+          </a>
+        </div>
+      </li>
+      <!-- User profile button -->
+      <li
+        class="cursor-pointer"
+      >
+        <user-circle-icon-stub
+          alt="Profil"
+          class="m-6 md:mr-2 h-7 text-primary-medium float-left"
+        />
+        <!-- Shows "Profil" if user is logged in, else "Logg inn"  -->
+        <a
+          class="hidden md:block mr-4 mt-7 text-sm float-right"
+        >
+          Profil
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+</div>
+`;

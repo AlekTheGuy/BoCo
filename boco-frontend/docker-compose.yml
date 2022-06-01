@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  boco-frontend:
+    build: .
+    container_name: boco-frontend
+    ports:
+      - 8080:8080

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommunityHeader component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Community header contains the community's name and address, a join button if
+       the user is not in the community and community hamburger menu if the user is
+       in the community -->
+  <div
+    adminstatus="true"
+    community="[object Object]"
+  >
+    <!-- A warning asking user is it is sure it wants to leave the community when leave community
+         from hamburger menu is clicked -->
+    
+    <!-- Main modal -->
+    <!--v-if-->
+    
+    <!-- The load spinner will show while community and it's members are being loaded from the db -->
+    <div
+      class="flex place-content-center mx-4"
+    >
+      
+      <!-- PacMan for indicating loading -->
+      <div
+        class="loadingio-spinner-bean-eater-o5tefvffeqm"
+      >
+        <div
+          class="ldio-sweozsnwol"
+        >
+          <div>
+            <div />
+            <div />
+            <div />
+          </div>
+          <div>
+            <div />
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+`;

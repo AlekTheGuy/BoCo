@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButtonComponent renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Button -->
+  <button
+    class="flex items-center px-2 py-2 font-medium tracking-wide capitalize text-white transition-colors duration-200 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-80 bg-primary-medium hover:bg-primary-dark focus:ring-primary-light"
+  >
+    <div
+      class="w-5 h-5 mx-1"
+    >
+      <!-- Slot for icon (Default BanIcon) -->
+      
+      <svg
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      
+    </div>
+    <span
+      class="mx-1"
+    >
+      hei
+    </span>
+  </button>
+  
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormImageDisplay component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Image -->
+  <img
+    alt="Bilde av gjenstanden"
+    class="w-2/5 inline"
+    src="http://localhost:3000/api/images/5"
+  />
+  <!-- Modal -->
+  
+  <!-- Main modal -->
+  <!--v-if-->
+  
+  
+</div>
+`;

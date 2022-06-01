@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserItems component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Shows all the items a user has posted with search and pagination.
+       Includes a dropdown menu for editing or deleting an item. -->
+  <div
+    class="text-xl md:text-2xl text-primary-light font-medium"
+    id="headline"
+  >
+     Mine gjenstander 
+  </div>
+  <!-- Search field -->
+  <div
+    class="relative mx-4"
+    id="searchComponent"
+  >
+    <span
+      class="absolute inset-y-0 left-0 flex items-center pl-3"
+    >
+      <svg
+        class="w-5 h-5 text-gray-400"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
+    </span>
+    <input
+      class="w-full py-3 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-primary-medium dark:focus:border-primary-medium focus:outline-none focus:ring"
+      id="searchInput"
+      placeholder="Søk"
+      type="text"
+    />
+  </div>
+  <div
+    class="absolute inset-x-0"
+  >
+    <!-- ItemCards -->
+    <div
+      class="flex items-center justify-center w-screen"
+    >
+      <!-- Shows items based on pagination -->
+      <div
+        class="grid grid-flow-row-dense grid-cols-2 md:grid-cols-4 lg:grid-cols-5 w-full"
+      >
+        
+        <div
+          class="cardContainer"
+          id="item"
+        >
+          <div
+            class="w-full"
+          >
+            
+            <!-- Item card, displays title, address, price per day and a picture -->
+            <div
+              class="mt-5 px-5 ItemCard w-full h-full"
+              id="ItemCardPage"
+            >
+              <div
+                class="w-full h-full rounded bg-gray-100 ring-1 ring-gray-200 overflow-hidden display:inline-block correct-size cursor-pointer"
+              >
+                <div
+                  class="relative h-0 pb-[66.7%]"
+                >
+                  <img
+                    alt="Item image"
+                    class="w-full h-full object-contain absolute"
+                    src=""
+                  />
+                </div>
+                <div
+                  class="p-1 m-1 bottom-0"
+                >
+                  <p
+                    class="font-bold text-sm"
+                    id="title"
+                  >
+                    Matboks
+                  </p>
+                  <p
+                    class="text-gray-700 text-xs"
+                    id="price"
+                  >
+                    50 kr 
+                  </p>
+                  <p
+                    class="text-gray-700 text-xs font-bold"
+                    id="adress"
+                  >
+                    Veien
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Dropdown menu with options for editing an item and deleting an item -->
+          <button
+            class="w-10 h-10 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg float-right text-sm p-1.5 DotButton"
+            data-dropdown-toggle="dropdown"
+            id="dropdownDefault"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="options z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 pt-4 pl-12"
+            style="display: none;"
+          >
+            <ul
+              aria-labelledby="dropdownDefault"
+              class="py-1 absolute bg-white ring-1 ring-gray-300 rounded-xl"
+            >
+              <li>
+                <button
+                  class="editButton block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                   Rediger gjenstand 
+                </button>
+              </li>
+              <li>
+                <button
+                  class="deleteButton block py-2 px-4 text-sm text-error-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >
+                   Slett gjenstand 
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- A waring asking the user if it is sure it wants to delete the item
+             with options to go ahead with the deleting or to cancel the delete. -->
+        
+        <!-- Main modal -->
+        <!--v-if-->
+        
+      </div>
+      <!-- Shows items based on search field input -->
+      <!--v-if-->
+    </div>
+    <!-- pagination -->
+    <div
+      class="flex justify-center"
+    >
+      
+      <!-- Pagination -->
+      <div
+        class="mt-10"
+      >
+        <!-- Prev button -->
+        <!--v-if-->
+        <!-- Current page -->
+        <label
+          class="mx-2 text-primary-light"
+        >
+          1 av 1
+        </label>
+        <!-- Next button -->
+        <!--v-if-->
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+`;

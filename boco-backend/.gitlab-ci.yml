@@ -1,0 +1,32 @@
+stages:          # List of stages for jobs, and their order of execution
+  - test
+  - publish
+  - deploy
+variables:
+  SERVERIP: $SERVERIP
+  SERVERUSER: $SERVERUSER
+  SERVER_PASSWORD: $SERVER_PASSWORD
+
+unit-test-job:   # This job runs in the test stage.
+  stage: test    # It only starts when the job in the build stage completes successfully.
+  image: maven:3.8-openjdk-17
+  script:
+    - pwd
+    - mvn clean test
+
+deploy-backend:
+  image: ubuntu:latest
+  stage: deploy
+  script:
+    - chmod og= $ID_RSA
+    - apt update
+    - apt install --assume-yes rsync
+    - apt install --assume-yes openssh-client
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVERUSER@$SERVERIP "sudo /bin/systemctl restart clean.service"
+    - rsync --archive --rsync-path=/usr/bin/rsync --delete --exclude='.git' -e "ssh -i $ID_RSA -o StrictHostKeyChecking=no -l gutta -p 22" . $SERVERIP:./app/server
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVERUSER@$SERVERIP "sudo /bin/systemctl restart app.service"
+  only:
+    - main
+
+
+

@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateNewGroup elements rendering renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- A form for creating a new community -->
+  <div
+    class="md:ring-1 ring-gray-300 rounded-xl overflow-hidden mx-auto mb-auto max-w-md w-full p-4"
+  >
+    <!-- Component heading -->
+    <div
+      class="text-xl md:text-2xl font-medium text-center text-gray-600 dark:text-gray-200 mt-4 mb-10"
+    >
+       Opprett ny gruppe 
+    </div>
+    <!-- Radio boxes -->
+    <div
+      class="mt-6"
+    >
+      <label
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        id="radioBoxLabel"
+      >
+        Synlighet
+      </label>
+      <div
+        class="form-check"
+      >
+        <input
+          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-primary-medium checked:border-primary-medium focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+          id="flexRadioOpen"
+          name="flexRadioDefault"
+          type="radio"
+          value="Åpen"
+        />
+        <label
+          class="form-check-label inline-block text-gray-800"
+          for="flexRadioOpen"
+          id="radioBoxOpenLabel"
+        >
+           Åpen 
+        </label>
+      </div>
+      <div
+        class="form-check"
+      >
+        <input
+          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-primary-medium checked:border-primary-medium focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+          id="flexRadioPrivate"
+          name="flexRadioDefault"
+          type="radio"
+          value="Privat"
+        />
+        <label
+          class="form-check-label inline-block text-gray-800"
+          for="flexRadioPrivate"
+          id="radioBoxPrivateLabel"
+        >
+           Privat 
+        </label>
+      </div>
+    </div>
+    <!-- Title -->
+    <div
+      class="mt-6"
+    >
+      <label
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        id="titleLabel"
+      >
+        Gruppenavn
+      </label>
+      <input
+        class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-primary-light dark:focus:border-primary-light focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-primary-light"
+        id="title"
+        required=""
+        type="text"
+      />
+      <!-- error message for title-->
+      
+      
+    </div>
+    <!-- Place -->
+    <div
+      class="mt-6"
+    >
+      <label
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        id="positionLabel"
+      >
+        By/Sted
+      </label>
+      <input
+        class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-primary-light dark:focus:border-primary-light focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-primary-light"
+        required=""
+        type="text"
+      />
+      <!-- error message for place-->
+      
+      
+    </div>
+    <!-- Description -->
+    <div
+      class="mt-6"
+    >
+      <label
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+        id="descriptionLabel"
+      >
+        Beskrivelse
+      </label>
+      <textarea
+        class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-primary-light dark:focus:border-primary-light focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-primary-light"
+        id="description"
+        required=""
+        rows="4"
+      />
+      <!-- error message for description -->
+      
+      
+    </div>
+    <!-- Images -->
+    <div
+      class="mt-6"
+    >
+      <label
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+        id="imageLabel"
+      >
+         Bilde (bildet må være .png) 
+      </label>
+      <input
+        accept="image/png"
+        multiple=""
+        style="display: none;"
+        type="file"
+      />
+      <!-- Button for adding an image -->
+      <div
+        class="inline-flex rounded-md shadow-sm"
+      >
+        <!--&lt;div class="text-error uppercase text-center"&gt;Midlertidig fjernet&lt;/div&gt; -->
+        <button
+          class="text-black bg-gray-200 hover:bg-grey-800 focus:ring-4 focus:outline-none focus:ring-grey-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-grey-600 dark:hover:bg-grey-700 dark:focus:ring-grey-800 disabled:opacity-50"
+        >
+           Velg bilde 
+        </button>
+      </div>
+      <!-- Div box for showing all chosen images -->
+      
+      
+    </div>
+    <!-- Save item button -->
+    <div
+      class="flex justify-center mt-10 float-right"
+    >
+      <button-stub
+        buttoncolor="blue"
+        id="saveButton"
+        text="Lagre"
+      />
+    </div>
+  </div>
+  
+</div>
+`;

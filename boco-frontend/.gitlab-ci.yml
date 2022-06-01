@@ -1,0 +1,59 @@
+image: node:16
+
+stages:
+#  - setup
+  - test
+  - deploy
+
+#variables:
+#  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+# Define a hidden job to be used with extends
+# Better than default to avoid activating cache for all jobs
+#.dependencies_cache:
+#  cache:
+#    key:
+#      files:
+#        - package-lock.json
+#    paths:
+#      - .npm
+#    policy: pull
+
+#setup:
+#  stage: setup
+#  script:
+#    - npm ci
+#  extends: .dependencies_cache
+#  cache:
+#    policy: pull-push
+#  artifacts:
+#    expire_in: 3 days #delete cache after 3 days to conserve space
+#    paths:
+#      - node_modules
+
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm run lint
+    - npm run test:unit
+
+deploy-backend:
+  image: ubuntu:latest
+  stage: deploy
+  script:
+    - chmod og= $ID_RSA
+    - apt update
+    - apt install --assume-yes rsync
+    - apt install --assume-yes openssh-client
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVERUSER@$SERVERIP "sudo /bin/systemctl restart cleanfront.service"
+    - rsync --archive --rsync-path=/usr/bin/rsync --delete --exclude='.git' --exclude='node_modules' -e "ssh -i $ID_RSA -o StrictHostKeyChecking=no -l $SERVERUSER -p 22" . $SERVERIP:./app/frontend
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVERUSER@$SERVERIP "cd app/frontend;npm install"
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no $SERVERUSER@$SERVERIP "sudo /bin/systemctl restart frontend.service"
+  only:
+    - main
+
+#unit_test:
+#  stage: test
+#  script:
+#    - npm run test:unit

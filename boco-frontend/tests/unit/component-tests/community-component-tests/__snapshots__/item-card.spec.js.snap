@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemCard component renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- Item card, displays title, address, price per day and a picture -->
+  <div
+    class="mt-5 px-5"
+  >
+    <div
+      class="w-full h-full rounded bg-gray-100 ring-1 ring-gray-200 overflow-hidden display:inline-block correct-size cursor-pointer"
+    >
+      <div
+        class="relative h-0 pb-[66.7%]"
+      >
+        <img
+          alt="Item image"
+          class="w-full h-full object-contain absolute"
+          src="String"
+        />
+      </div>
+      <div
+        class="p-1 m-1 bottom-0"
+      >
+        <p
+          class="font-bold text-sm"
+          id="title"
+        >
+          String
+        </p>
+        <p
+          class="text-gray-700 text-xs"
+          id="price"
+        >
+          0 kr 
+        </p>
+        <p
+          class="text-gray-700 text-xs font-bold"
+          id="adress"
+        >
+          String
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
